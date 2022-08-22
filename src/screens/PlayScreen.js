@@ -31,7 +31,7 @@ export default class PlayScreen extends React.Component {
     }
 
     componentDidMount() {
-        axios.get(`https://jiosaavn-api.vercel.app/song?id=${this.props.match.params.id}`)
+        axios.get(`https://saavnjio.vercel.app/song?id=${this.props.match.params.id}`)
             .then(res => {
                 var song = res.data;
                 this.setState({ song });
@@ -83,10 +83,10 @@ export default class PlayScreen extends React.Component {
                     </div>
                     <div className="footer">
                         <h1 className="playlogo">MUSICDER</h1> <br />
-                        <a className="atextdec" href={`https://github.com/cachecleanerjeet`}>
-                            <p className="playparagone" >An Open Source Project by Tuhin</p>
+                        <a className="atextdec" href={`https://github.com/Naseef1235`}>
+                            <p className="playparagone" >An Open Source Project by Naseef</p>
                         </a><br />
-                        <a href={`https://github.com/cachecleanerjeet/Musicder`}>
+                        <a href={`https://github.com/Naseef1235/Musicder`}>
                             <img alt="Github" className="center" src="../img/github-black.svg" width="30" height="30" /><br />
                         </a>
                     </div>
